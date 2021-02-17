@@ -58,7 +58,7 @@ body{
 }
 img { height: 100%; width: 100%; }
 ul {
-	background-image: url(./images/Sótano.jpg);
+	background-image: url(../images/Sótano.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
