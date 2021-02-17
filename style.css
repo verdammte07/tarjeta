@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+@font-face{
+    font-family: 'firsorder';
+    src: url(./tipografias/firstorder.ttf);
+}
+body{
+	background: black;
+	font-family: first order, 'Lucida Bright', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contenedor {
+	background: unset;
+	padding: 20px 0;
+	height: 80vh;
+	margin: auto;
+	width: 80%;
+	-webkit-perspective: 700;
+	text-align: center;
+	color: white;
+}
+.contenedor h1{
+	font-family: first order;
+	font-size: 3em;
+	margin: 20px auto;
+}
+.carta {
+	height: 100%;
+	width: 100%;
+	transition: all 1s;
+	transform-style: preserve-3d;
+	box-shadow: 0px 0px 5px black;
+	position: absolute;
+}
+
+.carta:hover{
+  transform: rotateY(180deg);
+}
+
+.lado{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+   background: #F0F0F0;
+  backface-visibility: hidden;
+}
+
+.frente{ 
+	background-color: unset; 
+}
+.frente h3 {
+   position: absolute;
+   font-size: 38px;
+   margin-top: 200px;
+   color: #fff;
+}
+img { height: 100%; width: 100%; }
+ul {
+	background-image: url(./images/Sótano.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0;
+  	margin:0;
+	width: 100%;
+	list-style: none;
+	height: 100%;
+	padding: 10px 0;
+  
+}
+ul li {
+	text-decoration: none;
+  	font-size: 2em;
+	margin: 25px auto;
+}
+ul li a{
+	font-family: first order;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+ul li a:hover{
+	color: #ecc227;
+}
+.atras{
+	height: 100%;
+	width: 100%;
+  transform: rotateY(180deg);
+}
+
+.atras h3 {
+	display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+@media screen and (max-width: 800px){
+	.contenedor{
+		width: 90%;
+		height: 40vh;
+	}
+	ul li {
+		text-decoration: none;
+		font-size: 1.2em;
+		margin: 12px auto;
+	}
+}
